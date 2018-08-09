@@ -1,0 +1,4 @@
+make all executeables   :   make all
+make client only        :   make client
+make server only        :   make server
+
