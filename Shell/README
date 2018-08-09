@@ -1,0 +1,15 @@
+Make all executables
+make all
+
+Run Shell
+./sh 	: run shell
+
+Make files of given size
+./mksh <filesize> <filename> .. : can give more args, but args should be a filesize-filename pair
+./mksh -d : make three default files with names rand1M, rand10M, and rand100M.
+
+Move files
+./mvsh <src path> <dest path> .. : can give more args, but args should be a src-dest pair.
+
+NOTE: for mksh and mvsh to work, add following to PATH :
+/usr/bin /usr/sbin/ /bin /sbin
