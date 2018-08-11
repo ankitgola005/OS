@@ -1,7 +1,6 @@
 /*  common.c
  *
  *  Ankit Gola:                 2017EET2296
- *  Pushpendra Singh Dahiya:    2017EET2680
  *
  *  This is the common.c file.
  *  This file contains the functions common to both server and client.

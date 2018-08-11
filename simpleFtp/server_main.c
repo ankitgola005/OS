@@ -1,7 +1,6 @@
 /*  server_main.c
  *
  *  Ankit Gola:                 2017EET2296
- *  Pushpendra Singh Dahiya:    
  *
  *  This is the main file of ftp server.
  *  This creates a socket, connects to it, and listens for clients.

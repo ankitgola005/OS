@@ -1,7 +1,6 @@
 /*  server.c
  *
  *  Ankit Gola:                 2017EET2296
- *  Pushpendra Singh Dahiya:    2017EET2680
  *
  *  This is the function file for server_main.c
  *  This file contains the function definations called in the program.

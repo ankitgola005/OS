@@ -1,7 +1,6 @@
 /*  client.c
  *
  *  Ankit Gola:                 2017EET2296
- *  Pushpendra Singh Dahiya:    2017EET2680
  *
  *  This is the client.c file.
  *  It contains all the function definations called in client_main.c,

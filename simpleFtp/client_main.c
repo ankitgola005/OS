@@ -1,7 +1,6 @@
 /*  client_main.c
  *
  *  Ankit Gola:                 2017EET2296
- *  Pushpendra Singh Dahiya:    2017EET2680
  *
  *  This is the main file of ftp client.
  *  This creates a socket, connects to server and loops 

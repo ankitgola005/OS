@@ -1,7 +1,6 @@
 /*  common.h
  *
  *  Ankit Gola:                 2017EET2296
- *  Pushpendra Singh Dahiya:    2017EET2680
  *
  *  This is the common.h file.
  *  This file contains function declarations along with their
