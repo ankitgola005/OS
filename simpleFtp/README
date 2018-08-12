@@ -3,4 +3,4 @@ make client only        :   make client
 make server only        :   make server
 
 Run Server              :   ./server <port number>
-Run Client              :   ./client <port number>
+Run Client              :   ./client <server address> <port number>
