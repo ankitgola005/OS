@@ -27,4 +27,7 @@ Builtin Commands :
   push/pop and path are implemented as stack, and thus the limit on size is OS implemented.
   dirs dispalys the stack populated by pushd/popd
 
+Note:
 Certain commands are subject to user privilage level, and shell will ask for user passwords in that case.
+ctrl + c makexs the shell jumpt to start of loop to read next command. This does NOT kill the shell
+ctrl + d exits the shell 
