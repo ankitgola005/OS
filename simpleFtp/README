@@ -1,6 +1,46 @@
+Compilations
 make all executeables   :   make all
 make client only        :   make client
 make server only        :   make server
 
+Execution
 Run Server              :   ./server <port number>
 Run Client              :   ./client <server address> <port number>
+
+Userinfo
+The server is provided with three admins by default
+username : su
+password : su
+
+username : ankit
+password : ankit
+
+username : psd
+password : psd
+
+Other than this, guest users can login without password with username "anonymous"
+
+Admins have full access rights over server.
+Guest users only have read rights over the server.
+Server supports multiple connected clients. (maximum 128)
+
+Flow
+As guest is connected, it prompts user for login.
+User may connect as a known user or anonymous. This identification is done on server side.
+Server than listens for the commands.
+Once user is finished, he may logout or exit.
+
+Supported commands and usage:
+  ls                              :   Display contents of server cwd
+  lls                             :   Display contents of the client cwd
+  cd <path>                       :   Changes path of server cwd
+  lcd <path>                      :   Changes path of client cwd
+  lchmod <filename> <attributes>  :   Changes permissions of a server file*
+  chmod <filename> <attributes>   :   Changes permissions of a client file
+  get <filename>                  :   Download server file to client
+  put <filename>                  :   Upload client file to server*
+  help                            :   Display a list of supported commands
+  close                           :   Logs out of session, another user may now login
+  exit/bye                        :   Terminates the session
+  
+*Subject to user permissions
