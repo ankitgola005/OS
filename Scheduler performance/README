@@ -30,3 +30,6 @@ Following parameters are calculated
   Load average
   
 NOTE: data becomes more reliable wih higher number of processes
+
+Sample data for a run of 10, 100 and 1000 processes has been written in Report.pdf and Stats.xlsx
+Data may vary between runs due to random nature of process parameters, but it should not vary too wildly.
