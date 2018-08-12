@@ -26,3 +26,5 @@ Builtin Commands :
   cd, exit, pushd, popd, dirs, and path commands are builtin into the shell, and function as usual shell commands.
   push/pop and path are implemented as stack, and thus the limit on size is OS implemented.
   dirs dispalys the stack populated by pushd/popd
+
+Certain commands are subject to user privilage level, and shell will ask for user passwords in that case.
