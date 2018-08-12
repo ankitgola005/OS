@@ -1,6 +1,8 @@
+Compilation
 Make all executables
 make all
 
+Execution
 Run Shell
 ./sh 	: run shell
 
@@ -11,5 +13,16 @@ Make files of given size
 Move files
 ./mvsh <src path> <dest path> .. : can give more args, but args should be a src-dest pair.
 
-NOTE: for mksh and mvsh to work, add following to PATH :
+NOTE: for mksh and mvsh to work independant of cwd, add following to PATH :
 /usr/bin /usr/sbin/ /bin /sbin
+
+Info
+Shell is implemented using fork and execvp, to imitate linux ubuntu shell as closely as possible
+PATH is persistant between different runs of shell, and PATH file can be located in cwd as ".shrc"
+All the regular commands of a shell are supported as per my knowledge (as long as PATH is correct)).
+One can execute own binaries from the shell as well. (eg mksh and mvsh as implemented here)
+
+Builtin Commands :
+  cd, exit, pushd, popd, dirs, and path commands are builtin into the shell, and function as usual shell commands.
+  push/pop and path are implemented as stack, and thus the limit on size is OS implemented.
+  dirs dispalys the stack populated by pushd/popd
