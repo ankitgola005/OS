@@ -24,19 +24,12 @@
 
 #define clear() printf("\033[H\033[J")
 
-/*
-char *builtinArr[] = {"cd", "exit"};
-int sh_builtinCount() {
-    return (sizeof(builtinArr)/sizeof(char*));
-}
-*/
 int main(int argc, char *argv[]) { 
-//    printf("count: %d\n", sh_builtinCount());
-//    printf("%s\n%s\n", builtinArr[0], builtinArr[1]);
-
-//    signal(SIGINT, INThandler);
+    // Handle exit commands ctrl+c, ctrl+D 
     signal(SIGINT, INThandler);
     clear();
+    
+    // Get username
     char *username = getenv("USER");
     struct utsname unameData;
     if(uname(&unameData)) {
