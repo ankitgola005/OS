@@ -1,4 +1,32 @@
-make executables:   make all
+Compiling:
+make all
 
-Running the program:
+Executing:
+./sim <number of processes> <Percent of System processes> <Percent of System CPU process> <Percent of User CPU process>
 
+INFO
+User runs the program with the total number of processes and absolute percentages of system, system CPU, and User CPU preocesses.
+Program then translates percentages to numbers (more accurately for larger number of processes).
+It then creates a sorted linked list of the processes, based on their arrival times.
+It then gives user option to simulate a number of scheduling schemes.
+
+Supported Scheduling Schemes:
+  FCFS
+  SJF
+  SJF with preemption
+  Priority with ageing
+  Priority with ageing and preemption
+  Round Robin with varying quanta
+  Multi Level queue with ageing and preemption between the queues
+  Multilevel feedback queue with ageing and preemption between the queues.
+
+Following parameters are calculated
+  Average Waiting time
+  Average Turn around time
+  Average Response time
+  Average Service time
+  Cpu Utilisation
+  Throughput
+  Load average
+  
+NOTE: data becomes more reliable wih higher number of processes
