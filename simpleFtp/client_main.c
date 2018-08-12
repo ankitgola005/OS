@@ -36,34 +36,7 @@ int main (int argc, char *argv[]) {
         return 1;
     }
     // Establish session
-    
     session(clientSocket);
-    /*int loggedIn = 0;
-    do {
-        loggedIn = client_login(clientSocket, 2);
-    } while(!loggedIn);
-
-    // User command loop
-    client_loop(clientSocket, loggedIn);
-*/
-    // Test code
-    /*
-    char buffer[64];
-    bzero(buffer, 64);
-    if(read(clientSocket, buffer, strlen(buffer)) < 0) {
-        fprintf(stderr, "Cannot read from socket\n");
-    }
-    fprintf(stdout, "ftp> %s: ", buffer);
-
-    bzero(buffer, 64);
-    fgets(buffer, 64, stdin);
-    buffer[strlen(buffer) - 1] = '\0';
-    
-    if(write(clientSocket, buffer, 64) < 0) {
-        fprintf(stderr, "Cannot write to socket\n");
-    }
-    fprintf(stdout, "To server: %s\n", buffer);
-    */
     
     // Destroy session
     // Destroy link
