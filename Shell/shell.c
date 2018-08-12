@@ -68,20 +68,12 @@ int sh_loop() {
     char *input;            // Hold input string
     char **args;            // Hold arguments as array of strings 
     int status = 1;
-/*  TODO: Uncomment before submission
+/*  Uncomment to reset path
     if(set_path()){
         fprintf(stderr, "Cannot reset PATH\n");
         exit(EXIT_FAILURE);
     }
 */
-    // Initialise and set dirs stack
-    //char dirArr[PATH_MAX];
-    //if(!sh_setDirs(dirArr)) {
-    //    fprintf(stderr, "Cannot set dirs stack\n");
-    //    exit(EXIT_FAILURE);
-    //}
-    //dirs = createNode(dirArr);
-//    dispStruct(dirs, " ");
 
     // Get current username
     char *uname = getenv("USER");
@@ -90,8 +82,6 @@ int sh_loop() {
     char hname[1024];
     gethostname(hname, 1024);
 
-
-//    system("gnome-terminal");  optional, open shell in new terminal
     do {
         // Handle ctrl+c, soft reset the while loop
         if(sigsetjmp(env, 1) == 42) {
@@ -500,8 +490,6 @@ int sh_path(char **args) {
 	} else if(!strcmp(args[1], "+") && args[2]){
         // If atleast two arguments exist, modifier and path to be added
         int i = 2;
-        //printf("old path :\n");
-        //dispStruct(head, "\n");
 
         // Recursively add all paths in args, if it is a valid directory
         while(args[i]) {
@@ -516,8 +504,7 @@ int sh_path(char **args) {
             }
             i++;
         }
-        //printf("old path :\n");
-        //dispStruct(head, "\n");
+	    
     } else if(!strcmp(args[1],"-") && args[2]){
         // If atleast two arguments exist, modifier and path to be deleted
         int i = 2;
@@ -570,7 +557,6 @@ int sh_path(char **args) {
         strcpy(strTemp, "");
     }
     
-   // printf("PATH: %s END", strTemp); 
     // Set enviornment for PATH as stored in string
     setenv("PATH", strTemp, 1);   
 
