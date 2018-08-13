@@ -1,8 +1,8 @@
 Compilation :
-make all
+    make all
 
 Execution :
-./sync <number of users> <number of servicemen>
+    ./sync <number of users> <number of servicemen>
 
 Info
 Main spawns the processes equal to the number of servicemen read from command line.
