@@ -1,0 +1,27 @@
+Compilation :
+make all
+
+Execution :
+./sync <number of users> <number of servicemen>
+
+Info
+Main spawns the processes equal to the number of servicemen read from command line.
+Number of users are generated at random with random arrival times in non decreasing order, along with few more attributes.
+Servicemen threads start to service the users.
+Main then loops until exited and scans for inputs
+User are serviced based on FCFS scheme.
+User occupies a serviceman till his use time expires, without interrupts.
+Users get ready for service when their arrival time exceeds the current time.
+Serviceman make a blocking call to the user queue, and remove users from ready queue to service queue.
+Once the user queue is empty, servicemen go idle.
+
+Valid inputs
+    Quick add user
+    Add N users
+    Add serviceman
+    Display current queue
+    Display current user under service
+    Change maximum number of users
+    Change maximum arrival time and/or use time ceil values
+    Print current defaults
+    help
