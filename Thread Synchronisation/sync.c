@@ -1,7 +1,6 @@
 /*  sync.c
  *
  *  Ankit Gola                  :       2017EET2296
- *  Pushpendra Singh Dahiya     :       2017EET2840
  *
  *  This is the sync.c file. It contains all the function definitions used in main
  *
