@@ -1,7 +1,6 @@
 /*  sync_main.c
  *
  *  Ankit Gola                  :       2017EET2296
- *  Pushpendra Singh Dahiya     :       2017EET2840
  *
  *  This is the main file for sync
  *
