@@ -1,7 +1,6 @@
 /*  sync.h
  *
  *  Ankit Gola:                 2017EET2296
- *  Pushpendra Singh Dahiya:    2017EET2840
  *
  *  This file contains the struct and function declarations of the 
  *  functions defined in sync.c along with their brief description
